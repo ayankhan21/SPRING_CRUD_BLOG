@@ -1,4 +1,5 @@
-    package com.blog.server.controller;
+    package com.ayankhan.springBlog.controller;
+
 
 import com.ayankhan.springBlog.model.Blog;
 import com.ayankhan.springBlog.service.BlogService;
@@ -17,7 +18,7 @@ import com.ayankhan.springBlog.service.BlogService;
         private BlogService blogService;
 
         // Create Blog
-        @PostMapping
+        @PostMapping("/create")
         public Blog createBlog(@RequestBody Blog blog) {
             return blogService.saveBlog(blog);
         }
