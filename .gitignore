@@ -1,0 +1,5 @@
+# Client dependencies
+client/node_modules
+
+# Server build files
+server/target
