@@ -33,6 +33,10 @@ import com.ayankhan.springBlog.service.BlogService;
     public List<String> getAllAuthors() {
         return blogService.getAllAuthors();
     }
+        @DeleteMapping("/{id}")
+        public void deleteBlog(@PathVariable String id) {
+            blogService.deleteBlog(id);
+        }
 
 
         // Get Blog by ID
